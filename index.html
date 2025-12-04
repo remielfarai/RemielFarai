@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Remiel Farai — Host • MC • Event Personality</title>
+
+  <!-- Google fonts — change if you prefer another -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <img src="assets/hero.jpg" alt="Remiel Farai" class="hero-image" />
+    <div class="hero-overlay">
+      <h1 class="name">Remiel Farai</h1>
+      <p class="subtitle">Host • MC • Event Personality</p>
+      <p class="strap">Smooth. Magnetic. Unmissable.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Book Me to Host</a>
+        <a class="btn ghost" href="#hosting">View Hosting</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Who / About teaser -->
+  <section id="about" class="section about">
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2>Who I am</h2>
+        <p>I’m Remiel Farai — an actor, host and creative based in Hackney, London. I bring stage-trained presence, calm confidence and magnetic charm to club nights, fashion events, live showcases and social experiences.</p>
+        <p><a class="link" href="https://app.spotlight.com/8450-0166-3502" target="_blank" rel="noopener">View my Spotlight profile</a></p>
+      </div>
+      <div class="about-photo">
+        <img src="assets/about.jpg" alt="Remiel close-up">
+      </div>
+    </div>
+  </section>
+
+  <!-- Hosting summary -->
+  <section id="hosting" class="section hosting">
+    <h2>Hosting Services</h2>
+    <p class="lead">Available for club nights, dating events, showcases, private events, and fashion events.</p>
+
+    <div class="services-grid">
+      <div class="service">
+        <h3>Club Nights</h3>
+        <p>Guiding the energy from start to finish — pacing, introductions, crowd moments and transitions.</p>
+      </div>
+      <div class="service">
+        <h3>Dating & Social Events</h3>
+        <p>Warm, confident facilitation to make people feel relaxed and connected.</p>
+      </div>
+      <div class="service">
+        <h3>Creative & Fashion Events</h3>
+        <p>Brand-aware hosting that complements the style and tone of your launch or showcase.</p>
+      </div>
+    </div>
+
+    <p class="note">Enquire for availability & rates.</p>
+  </section>
+
+  <!-- Contact / Booking form -->
+  <section id="contact" class="section contact">
+    <h2>Enquire to Book</h2>
+    <p class="muted">Tell me about your event and I’ll send a tailored quote.</p>
+
+    <!-- Replace the Formspree action with your own form ID -->
+    <form class="booking-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+      <label><span class="label">Your name</span><input type="text" name="name" required></label>
+      <label><span class="label">Email</span><input type="email" name="_replyto" required></label>
+      <label><span class="label">Organisation / Venue</span><input type="text" name="venue"></label>
+      <label><span class="label">Type of event</span><input type="text" name="event_type"></label>
+      <label><span class="label">Proposed date & location</span><input type="text" name="date"></label>
+      <label><span class="label">Budget / Rate range (optional)</span><input type="text" name="budget"></label>
+      <label><span class="label">Message</span><textarea name="message" rows="5" required></textarea></label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Send Booking Request</button>
+        <!-- mailto fallback -->
+        <a href="mailto:remielfarai@gmail.com" class="btn ghost">Email me directly</a>
+      </div>
+    </form>
+  </section>
+
+  <!-- Testimonials teaser -->
+  <section class="section testimonials-teaser">
+    <h2>What people say</h2>
+    <div class="test-rows">
+      <blockquote class="quote">“Remiel brought exactly the energy our event needed. Calm, confident and effortless.”<span>— Event Organiser, Shoreditch</span></blockquote>
+      <blockquote class="quote">“A natural at connecting with a crowd — guests stayed later because of him.”<span>— Club Promoter</span></blockquote>
+    </div>
+    <p class="muted">Read more or leave your own testimonial.</p>
+    <a class="btn ghost" href="testimonials.html">Read Testimonials</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Remiel Farai — Host • MC • Event Personality</p>
+      <p><a class="link" href="https://app.spotlight.com/8450-0166-3502" target="_blank" rel="noopener">Spotlight profile</a> • <a class="link" href="mailto:remielfarai@gmail.com">remielfarai@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Small inline year script (allowed) to keep footer current -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
